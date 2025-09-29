@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nitesh Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="left">Nitesh Portfolio</div>
+
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+
+      <div class="right" id="nav-links">
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="contactform.html">Projects</a></li>
+          <li><a href="contactform.html">Contact Me </a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="leftsection">
+        Hi, My Name is <span class="purple">Nitesh Kumar</span>
+        <div>and I am a passionate</div>
+        <span id="element"></span>
+        <div class="button">
+            <a href="cv.pdf" >
+          <button class="btn">Download Resume</button></a>
+        </div>
+      </div>
+      <div class="rightsection">
+        
+      </div>
+    </section>
+    <hr>
+  </main>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer.', 'Android Developer'],
+      typeSpeed: 70,
+    });
+
+    // menu toggle ka JS
+    const toggleBtn = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    toggleBtn.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+</body>
+
+</html>
